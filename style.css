@@ -71,6 +71,21 @@ body {
     width:fit-content;
 }
 
+.img-hover-zoom {
+	--scale: 1;
+	--transition-duration: 250ms;
+	scale: var(--scale);
+	transition:
+		scale 
+		var(--transition-duration) 
+		ease-in-out;
+}
+
+.img-hover-zoom:hover {
+	--scale: 1.1;
+}
+
+
 /* media screen */
 
 @media screen and (max-width: 950px) {
